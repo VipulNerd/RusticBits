@@ -14,16 +14,17 @@
         <!-- Top Navbar -->
         <nav class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Mentorship</a></li>
-                <li><a href="#">Mentors</a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENTORSHIP</a></li>
+                <li><a href="#">MENTORS</a></li>
             </ul>
 
         </nav>
 
-        <div class="main-content">
+
+        <section class="main-content">
             <!-- Profile Section -->
-            <div class="profile-section">
+            <section class="profile-section">
                 <img class="profile-img"
                     src="http://sliet.ac.in/wp-content/uploads/avatars/5/6fc17d6735998f4f22a0e91fbf43b75c-bpfull.jpg"
                     alt="Dr. Samuel Jackson">
@@ -31,20 +32,89 @@
                     <h2>Dr. Samuel Jackson</h2>
                     <p>Professor at Stanford University</p>
                     <p>Artificial Intelligence, Machine Learning, Computer Vision</p>
-                    <button class="btn-req">Request Mentorship</button>
+                    <button class="btn-req">Connect</button>
                     <button class="btn-en">Endorse</button>
                 </div>
-                <div class="skill">
-                    <h3>SKILLS</h3>
-                    <p class="skill-p">HTML</p>
-                    <p class="skill-p">CSS</p>
-                    <p class="skill-p">Javascrip</p>
+            </section>
+
+            <br>
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+            <!-- Profile Section -->
+            <section class="skill-section">
+
+                <span class="skill-div">
+                    <h3 class="skill">SKILS</h3>
+
+                    <span class="skill-ul">HTML</span>
+                    <span class="skill-ul">CSS</span>
+                    <span class="skill-ul">JavaScript</span>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="skill-ul">REACT</span>
+                    <span class="skill-ul">Node.Js</span>
+                    <span><a href="#" class="skill-a">More</a></span>
+
+                </span>
+
+                <span class="details">
+                    <h3 class="details-h3">DETAILS</h3>
+                    <ul class="details-ul">
+                        <li><span class="details-li">Contact:</span>
+                            +91-98159-80400</li>
+                        <li><span class="details-li">E-mail:</span> <a href="mailto: 	
+                            birmohansingh@sliet.ac.in">
+                                birmohansingh@sliet.ac.in </a></li>
+                        <li><span class="details-li">Department:</span> Computer Science & Engineering</li>
+                        <li><span class="details-li">Designation:</span>
+                            Professor</li>
+                        <li><span class="details-li">Qualification:</span> Ph.D., M.E.</li>
+                    </ul>
+                </span>
+
+            </section>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+            <!-- Availability Section -->
+            <section class="availability">
+                <h3>AVAILABILITY</h3>
+                <div class="slot-container">
+                    <ul>
+                        <label><input type="checkbox" class="slot-checkbox" data-full="false"> Today 4:00
+                            PM</label>
+                        <label><input type="checkbox" class="slot-checkbox" data-full="false"> Today 5:00
+                            PM</label>
+                        <label><input type="checkbox" class="slot-checkbox" data-full="false"> Tomorrow 2:00
+                            PM</label>
+                        <label><input type="checkbox" class="slot-checkbox" data-full="true"> Tomorrow 3:00 PM
+                            (Full)</label>
+                        <label><input type="checkbox" class="slot-checkbox" data-full="false"> Tomorrow 4:00
+                            PM</label>
                 </div>
-            </div>
+                </ul>
+                <button id="scheduleBtn">Schedule Meeting</button>
+            </section>
+
+
+            <br>
+            <br>
+            <hr>
+
+
             <!-- About Section -->
             <div class="about-section">
                 <div class="about-details">
-                    <h3>Know More</h3>
+                    <h3 class="about">KNOW MORE</h3>
                     <p>Artificial Intelligence, Machine Learning, Computer Vision. Lorem ipsum dolor sit, amet
                         consectetur adipisicing elit. Velit adipisci quas eaque, rem aperiam porro quidem amet. Rerum ea
                         quod laboriosam minus vitae alias maiores pariatur, veritatis assumenda velit praesentium!
@@ -64,28 +134,18 @@
                 </div>
             </div>
 
-            <!-- Availability Section -->
-            <div class="availability">
-                <h3>Availability</h3>
-                <div class="slot-container">
-                    <label><input type="checkbox" class="slot-checkbox" data-full="false"> Today 4:00 PM</label>
-                    <label><input type="checkbox" class="slot-checkbox" data-full="false"> Today 5:00 PM</label>
-                    <label><input type="checkbox" class="slot-checkbox" data-full="false"> Tomorrow 2:00 PM</label>
-                    <label><input type="checkbox" class="slot-checkbox" data-full="true"> Tomorrow 3:00 PM
-                        (Full)</label>
-                    <label><input type="checkbox" class="slot-checkbox" data-full="false"> Tomorrow 4:00 PM</label>
-                </div>
-                <button id="scheduleBtn">Schedule Meeting</button>
-            </div>
+
             <!-- Popup -->
             <div id="popup">
                 <h2>Can't register for this slot, it's full!</h2>
                 <button id="closePopup">Close</button>
             </div>
-        </div>
-
-
-
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+        </section>
     </div>
 
     <script src="script.js"></script>

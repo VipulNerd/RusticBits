@@ -14,7 +14,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #007bff;
+    background-color: rgb(52, 138, 107);
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -40,7 +40,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #007bff;
+    color: #000000;
 }
 
 
@@ -65,25 +65,29 @@ body {
 }
 
 .main-content {
-    padding-top: 100px;
+    padding-top: 38px;
     margin-top: 10px;
-    padding: 20px;
+
 }
 
 .profile-section {
-    margin-top: 20px;
+
     display: flex;
     align-items: flex-start;
+    width: 100%;
+    background-color: rgb(51, 94, 168);
+    color: #ffff;
 }
 
 .profile-img {
-    width: 150px;
+    width: 200px;
     border-radius: 10%;
-    margin-right: 20px;
+    margin: 50px;
 }
 
 .profile-details {
     max-width: 600px;
+    margin: 50px;
 }
 
 .profile-details h2 {
@@ -92,28 +96,74 @@ body {
 
 .profile-details p {
     font-size: 14px;
-    color: #555;
+    color: #ffff;
+}
+
+.skill-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.skill-div {
+    margin-left: 50px;
 }
 
 .skill {
-    margin-left: 100px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
 
 }
 
-.skill-p {
+.skill-ul {
     border: none;
-    border-radius: 10%;
-    background-color: #555;
-    color: #ffff;
+    border-radius: 40%;
+    background-color: #e8e7e7;
+    color: black;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
 
 }
+
+.skill-a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.details {
+    margin-left: 100px;
+}
+
+.details-h3 {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.details-ul {
+    font-size: medium;
+}
+
+
+.details-li {
+    color: rgb(52, 138, 107);
+    font-weight: bold;
+}
+
 
 .availability {
-    margin-top: 30px;
-    background-color: #007bff;
+
+    background-color: rgb(52, 138, 107);
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
+    margin: 30px;
+    color: #ffff;
 
 }
 
@@ -132,13 +182,14 @@ body {
 }
 
 .slot-checkbox {
+    margin-top: 20px;
     margin-right: 10px;
-    margin-left: 60px;
+    margin-left: 45px;
 }
 
 
 button#scheduleBtn {
-    background-color: rgb(72, 187, 72);
+    background-color: rgb(51, 94, 168);
     color: #ffff;
     border: none;
     padding: 10px 20px;
@@ -146,8 +197,8 @@ button#scheduleBtn {
     cursor: pointer;
     margin-top: 40px;
     position: relative;
-    -ms-transform: translateX(520px);
-    transform: translateX(520px);
+    -ms-transform: translateX(510px);
+    transform: translateX(510px);
 }
 
 button#scheduleBtn:hover {
@@ -181,4 +232,15 @@ button#closePopup {
 
 button#closePopup:hover {
     background-color: #d32f2f;
+}
+
+.about {
+    text-align: center;
+    font-size: 40px;
+}
+
+.about-section {
+    text-align: justify;
+    font-size: medium;
+    margin-top: 10px;
 }
