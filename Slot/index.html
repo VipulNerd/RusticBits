@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Top Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Mentorship</a></li>
+                <li><a href="#">Mentors</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="main-content">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <img class="profile-img"
+                    src="http://sliet.ac.in/wp-content/uploads/avatars/5/6fc17d6735998f4f22a0e91fbf43b75c-bpfull.jpg"
+                    alt="Dr. Samuel Jackson">
+                <div class="profile-details">
+                    <h2>Dr. Samuel Jackson</h2>
+                    <p>Professor at Stanford University</p>
+                    <p>Artificial Intelligence, Machine Learning, Computer Vision</p>
+                    <button class="btn-req">Request Mentorship</button>
+                    <button class="btn-en">Endorse</button>
+                </div>
+                <div class="skill">
+                    <h3>SKILLS</h3>
+                    <p class="skill-p">HTML</p>
+                    <p class="skill-p">CSS</p>
+                    <p class="skill-p">Javascrip</p>
+                </div>
+            </div>
+            <!-- About Section -->
+            <div class="about-section">
+                <div class="about-details">
+                    <h3>Know More</h3>
+                    <p>Artificial Intelligence, Machine Learning, Computer Vision. Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Velit adipisci quas eaque, rem aperiam porro quidem amet. Rerum ea
+                        quod laboriosam minus vitae alias maiores pariatur, veritatis assumenda velit praesentium!
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tempore ipsam non numquam quidem
+                        qui nostrum, iusto blanditiis perspiciatis, voluptates repellat eaque quibusdam? Pariatur atque
+                        nobis quo enim provident dicta?</p>
+                    <p>Aliquid repellat reiciendis architecto quia officia. Sequi reiciendis fugiat nostrum aperiam
+                        suscipit, sit minus ut aliquid esse veritatis consectetur delectus molestiae ratione quo
+                        aspernatur unde, perspiciatis, asperiores porro? Dolores, dicta.</p>
+                    <p>Fugiat quam nihil ipsum repudiandae laboriosam, accusantium ipsa distinctio voluptate ex. At
+                        illum quidem mollitia soluta, eius harum commodi omnis quibusdam dolore error ut delectus
+                        deserunt laboriosam aliquam dicta? Optio!</p>
+                    <p>Ab, nemo aperiam. Laboriosam, facilis? Perspiciatis autem nisi adipisci? Magni accusamus
+                        perspiciatis obcaecati quisquam neque ut adipisci sapiente debitis, hic, ea error sequi nisi
+                        suscipit quibusdam iusto deserunt eveniet quas.</p>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Availability Section -->
+            <div class="availability">
+                <h3>Availability</h3>
+                <div class="slot-container">
+                    <label><input type="checkbox" class="slot-checkbox" data-full="false"> Today 4:00 PM</label>
+                    <label><input type="checkbox" class="slot-checkbox" data-full="false"> Today 5:00 PM</label>
+                    <label><input type="checkbox" class="slot-checkbox" data-full="false"> Tomorrow 2:00 PM</label>
+                    <label><input type="checkbox" class="slot-checkbox" data-full="true"> Tomorrow 3:00 PM
+                        (Full)</label>
+                    <label><input type="checkbox" class="slot-checkbox" data-full="false"> Tomorrow 4:00 PM</label>
+                </div>
+                <button id="scheduleBtn">Schedule Meeting</button>
+            </div>
+            <!-- Popup -->
+            <div id="popup">
+                <h2>Can't register for this slot, it's full!</h2>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
