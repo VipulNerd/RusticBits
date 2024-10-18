@@ -116,6 +116,10 @@ body {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow */
 }
 
+.switch-link {
+    color: rgb(0, 0, 0);
+}
+
 /* Footer Styles */
 footer {
     width: 100%;
@@ -148,14 +152,6 @@ footer p {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.fa-moon {
-    color: #f1c40f;
-}
-
-.fa-sun {
-    color: #f39c12;
 }
 
 .checkbox-label .ball {
