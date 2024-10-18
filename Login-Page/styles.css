@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(); 
+    background-color: #ffffff; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +169,7 @@ footer p {
 }
 
 .dark {
-    background-image: url(https://img.freepik.com/free-vector/blue-green-patterned-background-vector_53876-77850.jpg?w=740&t=st=1729254686~exp=1729255286~hmac=20bebc13a844b594ac6abd9653d5bc1bbef032defbf9b1bfac3c0fd30b8e50fa);
+    background-color: #252526;
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
