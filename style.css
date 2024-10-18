@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Reset */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(); /* Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Column */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center */
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 150px; 
+}
+
+.logo-section {
+    text-align: center; /* Center */
+    margin-bottom: 20px;
+}
+
+.logo-section img {
+    width: 700px; /* Logo Width */
+    height: 100px; /* Logo Height */
+}
+
+.login-box {
+    background-image: url(https://img.freepik.com/free-photo/elevated-view-white-flower-petals-pink-background_23-2147893910.jpg?w=1060&t=st=1729248423~exp=1729249023~hmac=1f99bdaf67f9246ac5eb6768882442fe951a87263f699bb0b93e9b9746a24297);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    padding: 40px;
+    border-radius: 10px; /* Rounded */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Shadow */
+    width: 350px; /* Width */
+    text-align: center; /* Center */
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    margin-bottom: 20px;
+    color: #333; /* Color */
+    font-size: 28px; /* Font Size */
+    font-family: 'Georgia'; /*Font */
+}
+
+.input-group {
+    margin-bottom: 20px; /* Spacing */
+    position: relative; /* Relative */
+}
+
+.input-group label {
+    display: block; /* Block */
+    margin-bottom: 8px; 
+    color: #666; /* Color */
+    font-weight: 500; /* Weight */
+}
+
+.input-group input {
+    width: 100%; /* Full Width */
+    padding: 10px; /* Padding */
+    border-radius: 5px; /* Rounded */
+    border: 1px solid #ccc; /* Border */
+}
+
+.password-group {
+    position: relative; /* Relative */
+}
+
+.password-group .toggle-password {
+    cursor: pointer; /* Pointer */
+    position: absolute; 
+    right: 15px; 
+    top: 36px; /* Position */
+    transition: color 0.2s ease; /* Transition */
+}
+
+.password-group .toggle-password:hover {
+    color: #ff6347; /* Hover Color */
+}
+
+.button-56 {
+    align-items: center; /* Align */
+    background-color: #fee6e3; /* Background */
+    border: 2px solid #111; /* Border */
+    border-radius: 8px; /* Rounded */
+    color: #111; /* Color */
+    cursor: pointer; /* Pointer */
+    display: flex; /* Flex */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Font Size */
+    height: 48px; /* Height */
+    justify-content: center; /* Center */
+    line-height: 24px; /* Line Height */
+    padding: 0 25px; /* Padding */
+    position: relative; /* Relative */
+    text-align: center; /* Center */
+    text-decoration: none; /* No Decoration */
+    width: 100%; /* Full Width */
+    overflow: hidden; /* Overflow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition */
+}
+
+.button-56:hover {
+    transform: scale(1.05); /* Scale */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 2em 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #03153c;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-moon {
+    color: #f1c40f;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+/* Dark mode styles */
+.dark {
+    background-image:url(https://img.freepik.com/free-vector/blue-green-patterned-background-vector_53876-77850.jpg?w=740&t=st=1729254686~exp=1729255286~hmac=20bebc13a844b594ac6abd9653d5bc1bbef032defbf9b1bfac3c0fd30b8e50fa) ;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: #fff;
+}
