@@ -73,6 +73,7 @@ body {
 .profile-section {
 
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     width: 100%;
     background-color: rgb(51, 94, 168);
@@ -99,13 +100,33 @@ body {
     color: #ffff;
 }
 
-.skill-section {
+.details {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.details-h3 {
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.details-ul {
+    font-size: medium;
+}
+
+
+.details-li {
+    color: #000000;
+    font-weight: bold;
+}
+
+.skexme-section {
     display: flex;
     flex-direction: row;
 }
 
 .skill-div {
-    margin-left: 50px;
+    margin-left: 10px;
 }
 
 .skill {
@@ -136,23 +157,68 @@ body {
     padding: 10px;
 }
 
-.details {
+.expertise-div {
     margin-left: 100px;
 }
 
-.details-h3 {
-    margin-left: 20px;
+.expertise {
     font-size: 25px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+
 }
 
-.details-ul {
-    font-size: medium;
+.expertise-ul {
+    border: none;
+    border-radius: 40%;
+    background-color: #e8e7e7;
+    color: black;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+
 }
 
-
-.details-li {
-    color: rgb(52, 138, 107);
+.expertise-a {
+    text-decoration: none;
+    color: black;
     font-weight: bold;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.mentorship-div {
+    margin-left: 110px;
+}
+
+.mentorship {
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+
+}
+
+.mentorship-ul {
+    border: none;
+    border-radius: 40%;
+    background-color: #e8e7e7;
+    color: black;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
+
+}
+
+.mentorship-a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 15px;
+    padding: 10px;
 }
 
 
@@ -243,4 +309,19 @@ button#closePopup:hover {
     text-align: justify;
     font-size: medium;
     margin-top: 10px;
+}
+
+.about-ol {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.footer {
+    background-color: rgb(51, 94, 168);
+    height: 22px;
+    text-align: center;
+    color: #ffff;
+    font-weight: bold;
 }
