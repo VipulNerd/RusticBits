@@ -1,8 +1,15 @@
-const togglePassword = document.querySelector('.toggle-password');
-const passwordInput = document.querySelector('#password');
+let texts = Array.from(document.querySelectorAll('.container p'));
+let i = 1; // starting from 1 because 0 already has is-visible, it would cause slight delay otherwise.
 
-togglePassword.addEventListener('click', () => {
-    const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-    passwordInput.setAttribute('type', type);
-    togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
-});
+setInterval(() => {
+  texts.forEach(text => {
+    text.classList.remove('is-visible');
+  });
+  texts[i].classList.add('is-visible');
+  i += 1;
+  if (i >= texts.length) {
+    i = 0;
+  }
+}, 2000);
+
+//

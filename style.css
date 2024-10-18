@@ -1,183 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Reset */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #383535; */
+    /* border-radius: 30px; */
+
+}
+
+.logo {
+    filter: invert(1);
+    width: 20px;
+    height: 1px;
+}
+
+.SignUp {
+
+    margin: 20px 10px;
+    background: #252526;
+    color: #b3b3b3;
+    font-size: 20px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+
+}
+
+.SignUp:hover {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.Login {
+    margin: 20px 10px;
+    background: #252526;
+    color: #b3b3b3;
+    font-size: 20px;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+
+}
+
+.login-a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+.login-a:hover {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.login- .search-bar {
+    margin-left: 300px;
+
+}
+
+.search-bar input {
+    width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #1b1b1b;
+    color: white;
+    font-weight: bolder;
+}
+
+.trending-section .trending-links {
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.trending-section .trending-links span {
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    padding-bottom: 15px;
+    /* text-decoration: underline; */
+    justify-content: space-between;
+    color: white;
+
+
+}
+
+.trending-section .trending-links span:hover {
+
+    font-size: 18px;
+}
+
+
+
+body {
+    background: #252526;
+    height: 100vh;
+    display: grid;
+    /* place-items: center; */
+    font-family: Montserrat;
+    color: #b3afbf;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-image: url(); /* Background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column; /* Column */
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #ee0979; */
+    /* background: linear-gradient(to left, #ee0979, #ff6a00); */
+}
+
+.container p {
+    font-size: 80px;
+    font-family: "montserrat";
+    letter-spacing: 8px;
+    text-indent: -8px;
+    text-transform: uppercase;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s all ease-out;
+    font-weight: bold;
+    color: white;
+}
+
+.container p.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.right-container {
+    width: 30vw;
+    height: 100vh;
+    /* background-color: black; */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center */
-    align-items: center;
-    height: 100vh;
-    padding-bottom: 150px; 
-}
-
-.logo-section {
-    text-align: center; /* Center */
-    margin-bottom: 20px;
-}
-
-.logo-section img {
-    width: 700px; /* Logo Width */
-    height: 100px; /* Logo Height */
-}
-
-.login-box {
-    background-image: url(https://img.freepik.com/free-photo/elevated-view-white-flower-petals-pink-background_23-2147893910.jpg?w=1060&t=st=1729248423~exp=1729249023~hmac=1f99bdaf67f9246ac5eb6768882442fe951a87263f699bb0b93e9b9746a24297);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    padding: 40px;
-    border-radius: 10px; /* Rounded */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Shadow */
-    width: 350px; /* Width */
-    text-align: center; /* Center */
-    position: relative;
-    z-index: 1;
-}
-
-.header {
-    margin-bottom: 20px;
-    color: #333; /* Color */
-    font-size: 28px; /* Font Size */
-    font-family: 'Georgia'; /*Font */
-}
-
-.input-group {
-    margin-bottom: 20px; /* Spacing */
-    position: relative; /* Relative */
-}
-
-.input-group label {
-    display: block; /* Block */
-    margin-bottom: 8px; 
-    color: #666; /* Color */
-    font-weight: 500; /* Weight */
-}
-
-.input-group input {
-    width: 100%; /* Full Width */
-    padding: 10px; /* Padding */
-    border-radius: 5px; /* Rounded */
-    border: 1px solid #ccc; /* Border */
-}
-
-.password-group {
-    position: relative; /* Relative */
-}
-
-.password-group .toggle-password {
-    cursor: pointer; /* Pointer */
-    position: absolute; 
-    right: 15px; 
-    top: 36px; /* Position */
-    transition: color 0.2s ease; /* Transition */
-}
-
-.password-group .toggle-password:hover {
-    color: #ff6347; /* Hover Color */
-}
-
-.button-56 {
-    align-items: center; /* Align */
-    background-color: #fee6e3; /* Background */
-    border: 2px solid #111; /* Border */
-    border-radius: 8px; /* Rounded */
-    color: #111; /* Color */
-    cursor: pointer; /* Pointer */
-    display: flex; /* Flex */
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px; /* Font Size */
-    height: 48px; /* Height */
-    justify-content: center; /* Center */
-    line-height: 24px; /* Line Height */
-    padding: 0 25px; /* Padding */
-    position: relative; /* Relative */
-    text-align: center; /* Center */
-    text-decoration: none; /* No Decoration */
-    width: 100%; /* Full Width */
-    overflow: hidden; /* Overflow */
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition */
-}
-
-.button-56:hover {
-    transform: scale(1.05); /* Scale */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Shadow */
-}
-
-/* Footer Styles */
-footer {
-    width: 100%;
+    justify-content: center;
     text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 2em 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
 }
 
-footer p {
-    margin: 0;
+.right-headline {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-.checkbox-label {
-    background-color: #03153c;
-    width: 50px;
-    height: 26px;
-    border-radius: 50px;
-    position: relative;
-    padding: 5px;
+.right-search-btn {
+    background-color: lightgreen;
+    border: none;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
     cursor: pointer;
-    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.right-search-bar {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.right-info {
+    margin-bottom: 20px;
+}
+
+.right-roles-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    gap: 10px;
 }
 
-.fa-moon {
-    color: #f1c40f;
+.right-role-box {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    flex-basis: 48%;
+    /* Each box takes roughly half of the container width */
+    text-align: center;
+    font-size: 14px;
 }
 
-.fa-sun {
-    color: #f39c12;
-}
-
-.checkbox-label .ball {
-    background-color: #fff;
-    width: 22px;
-    height: 22px;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
-}
-
-.checkbox:checked+.checkbox-label .ball {
-    transform: translateX(24px);
-}
-
-/* Dark mode styles */
-.dark {
-    background-image:url(https://img.freepik.com/free-vector/blue-green-patterned-background-vector_53876-77850.jpg?w=740&t=st=1729254686~exp=1729255286~hmac=20bebc13a844b594ac6abd9653d5bc1bbef032defbf9b1bfac3c0fd30b8e50fa) ;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    color: #fff;
+.card-a {
+    text-decoration: none;
+    color: rgb(92, 230, 234);
+    font-weight: bold;
 }
