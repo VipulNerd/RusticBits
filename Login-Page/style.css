@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(); /* Background */
+    background-color: #252526; /* Background */
     display: flex;
     justify-content: center;
     align-items: center;
