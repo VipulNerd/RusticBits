@@ -174,9 +174,23 @@
             <br>
             <br>
 
-
+            <!--Footr-->
             <section class="footer">
-                <div class="footer-div">&copy; Sant Longowal Institute of Engineering & Technology, Longowal</div>
+                <div class="footer-div">&copy; Sant Longowal Institute of Engineering & Technology, Longowal
+                </div>
+                <!--Dark mode-->
+                <div class="dark-mode-toggle">
+                    <input type="checkbox" class="checkbox" id="dark-mode-checkbox">
+                    <label for="dark-mode-checkbox" class="checkbox-label">
+                        <span class="ball"></span>
+                    </label>
+                </div>
+                <script>
+                    const checkbox = document.getElementById("dark-mode-checkbox");
+                    checkbox.addEventListener("change", () => {
+                        document.body.classList.toggle("dark-mode");
+                    });
+                </script>
             </section>
 
             <!-- Popup -->
