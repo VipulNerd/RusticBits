@@ -379,6 +379,19 @@ body.dark-mode footer {
     button#scheduleBtn {
         transform: translateX(0);
     }
+
+    .footer {
+        background-color: rgb(51, 94, 168);
+        height: 40px;
+        color: #ffff;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        text-align: center;
+        margin-top: 100px;
+        width: 100%;
+    }
 }
 
 /* For tablets */
@@ -398,6 +411,19 @@ body.dark-mode footer {
 
     button#scheduleBtn {
         transform: translateX(0);
+    }
+
+    .footer {
+        background-color: rgb(51, 94, 168);
+        height: 40px;
+        color: #ffff;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+        text-align: center;
+        margin-top: 100px;
+        width: 100%;
     }
 }
 
