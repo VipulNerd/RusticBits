@@ -7,8 +7,9 @@
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
     user-select: none;
 }
-.card:hover{
-    
+
+.card:hover {
+
     transform: scale(1.01);
 
 }
@@ -16,8 +17,8 @@
 
 
 
-.profile{
-    background-size:contain;
+.profile {
+    background-size: contain;
     height: 180px;
     width: 180px;
     border-radius: 50%;
@@ -29,7 +30,7 @@
 
 .profile-name {
     font-size: 20px;
-    margin: 30px ;
+    margin: 30px;
     color: #fff;
 }
 
@@ -64,6 +65,11 @@
     color: #222;
 }
 
+.card-a:hover {
+    background: #7ce3ff;
+    color: #222;
+}
+
 
 .subjects-container {
     margin-top: 15px;
@@ -81,7 +87,8 @@
     background-color: #dacece;
     padding: 10px;
     border-radius: 5px;
-    flex-basis: 48%; /* Takes roughly half the available space */
+    flex-basis: 48%;
+    /* Takes roughly half the available space */
     text-align: center;
     font-size: 14px;
     color: black;
