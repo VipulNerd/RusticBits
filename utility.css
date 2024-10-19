@@ -94,3 +94,103 @@
     color: black;
     font-weight: bolder;
 }
+
+/* Desktop and large laptop screens */
+@media only screen and (min-width: 1024px) {
+    .card {
+        width: 350px;
+    }
+
+    .profile {
+        height: 180px;
+        width: 180px;
+    }
+
+    .subjects-container {
+        flex-direction: row;
+    }
+
+    .subject-box {
+        flex-basis: 48%;
+    }
+}
+
+/* Small laptop screens (800px - 1024px) */
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .card {
+        width: 300px;
+    }
+
+    .profile {
+        height: 150px;
+        width: 150px;
+    }
+
+    .subjects-container {
+        flex-direction: row;
+    }
+
+    .subject-box {
+        flex-basis: 48%;
+    }
+}
+
+/* Tablet screens (600px - 800px) */
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .card {
+        width: 250px;
+    }
+
+    .profile {
+        height: 130px;
+        width: 130px;
+    }
+
+    .subjects-container {
+        flex-direction: row;
+    }
+
+    .subject-box {
+        flex-basis: 100%;
+    }
+}
+
+/* Mobile screens (375px - 600px) */
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+    .card {
+        width: 220px;
+    }
+
+    .profile {
+        height: 120px;
+        width: 120px;
+    }
+
+    .subjects-container {
+        flex-direction: column;
+    }
+
+    .subject-box {
+        flex-basis: 100%;
+    }
+}
+
+/* Small iPhone screens (up to 375px) */
+@media only screen and (max-width: 375px) {
+    .card {
+        width: 180px;
+    }
+
+    .profile {
+        height: 100px;
+        width: 100px;
+    }
+
+    .subjects-container {
+        flex-direction: column;
+    }
+
+    .subject-box {
+        flex-basis: 100%;
+    }
+}
