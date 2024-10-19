@@ -74,5 +74,6 @@ For any queries or feedback, feel free to reach out:
 
 - **Team Name**: RusticBits
 - **GitHub**: [VipulNerd](https://github.com/VipulNerd)
-
+- **Website**: [RusticBits](vipulnerd.github.io/RusticBits/).
 Feel free to open an issue if you encounter any problems or have suggestions!
+
